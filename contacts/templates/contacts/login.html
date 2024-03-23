@@ -1,0 +1,22 @@
+{% extends 'contacts/base.html' %}
+{% load static %}
+{% block title %}
+Contact Book API
+{% endblock %}
+
+{% block content %}
+<div class="login-container">
+    <h1>Sign In</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+
+        <label for="uname">Username</label>
+        <input type="text" placeholder="Enter username" id="uname" name="uname" required> <br>
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter password" id="password" name="password" required> <br>
+        <input type="submit" value="SignIn">
+    </form>
+    <p>Don't have an account? </p>
+    <button><a href="{% url 'register' %}">Sign Up</a></button>
+</div>
+{% endblock %}

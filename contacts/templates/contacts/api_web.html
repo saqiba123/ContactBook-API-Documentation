@@ -1,0 +1,37 @@
+{% extends 'contacts/base.html' %}
+{% load static %}
+{% block title %}
+Contact Book API
+{% endblock %}
+
+{% block content %}
+<div class="api-container">
+    <h1>Contact Book API</h1>
+    <p>Welcome to List of Contacts API</p>
+    <p>Click the button below to access the Swagger API documentation:</p>
+    <a href="{% url 'schema-swagger-ui' %}" target="_blank"><button class="swagger-btn">Swagger API
+            Documentation</button></a>
+    <br> <br>
+    <p>ContactBook API endpoints include:</p>
+    <br>
+    <ul>
+        <li>GET /contacts_all: Retrieve all contacts</li>
+        <li>POST /contacts: Add new contact</li>
+        <li>GET /contact_get/{id}: Retrieve a specific contact</li>
+        <li>PUT /contact_edit/{id}: Update a contact record</li>
+        <li>DELETE /contact_delete/{id}: Delete a contact record</li>
+    </ul>
+</div>
+
+<div class="image-container">
+    <img src="{% static 'image.png' %}" alt="contact_info">
+    <img src="{% static 'api_visuals.png' %}" alt="new">
+    <img src="{% static 'info.jpg' %}" alt="abc">
+</div>
+{% endblock %}
+
+{% block javascript %}
+<script>
+    var show_logout_button = "{{ show_logout_button|lower }}";
+</script>
+{% endblock %}

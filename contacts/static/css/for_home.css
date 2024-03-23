@@ -1,0 +1,92 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply styles to the home container */
+.home-container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(92, 87, 87, 0.1);
+    margin: 20px auto; /* Center the container */
+    width: 90%; /* Adjust width as needed */
+    max-width: 1200px; /* Adjust max-width as needed */
+    background-color: white;
+}
+
+/* Apply styles to headings */
+.home-container h1, .home-container h2, .home-container h3 {
+    text-align: left;
+}
+
+/* Apply styles to paragraphs */
+
+/* Apply styles to links */
+.home-container a {
+    /* color: black; */
+    text-decoration: none;
+}
+.here{
+    color: black;
+}
+
+/* Apply styles to buttons */
+.home-container button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+/* Adjust styling for button hover */
+.home-container button:hover {
+    background-color: #3f8042;
+    color: white;
+}
+
+/* Apply styles to social media links */
+.home-container .social-links .social-link {
+    background-color: #3f8042;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Apply styles to sections */
+
+.home-container .faq-section,
+.home-container .how-it-works-section,
+.home-container .social-media-section,
+.home-container .contact-section {
+    margin-bottom: 20px;
+}
+
+/* Apply styles to FAQs */
+.home-container .faq-section .faq {
+    margin-bottom: 10px;
+}
+
+/* Apply styles to lists */
+.home-container ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.home-container ol {
+    margin-left: 20px;
+}
+
+/* Apply styles to list items */
+.home-container li {
+    margin-bottom: 5px;
+}
+
+/* Apply styles to buttons inside a div */
+.home-container div button {
+    margin-right: 10px;
+}

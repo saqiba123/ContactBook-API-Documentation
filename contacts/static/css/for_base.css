@@ -1,0 +1,125 @@
+/* base.css */
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+} */
+
+.navbar-base {
+    grid-column: 1 / -1;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-family: cursive;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 50px; /* Adjust as needed */
+    width: auto;
+}
+
+.navbar-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-buttons button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-buttons button:hover {
+    background-color: #555;
+    color: #fff; /* Change to brighter color when hovering */
+}
+
+.logout-btn {
+    background-color: #f44336;
+}
+
+.login-btn,
+.register-btn,
+.home-btn {
+    color: white;
+}
+
+.navbar-buttons a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Change text color */
+}
+
+.navbar-buttons a:hover {
+    color: #fff; /* Change text color on hover */
+}
+
+.container {
+    grid-column: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.title-text {
+    margin-left: 10px; /* Adjust as needed to create space between the logo and title */
+    font-size: 20px; /* Adjust as needed */
+    font-weight: bold; /* Optionally adjust the font weight */
+    color: white; /* Adjust text color as needed */
+}
+
+.swagger-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.swagger-btn:hover {
+    background-color: #45a049;
+}
+
+.footer {
+    grid-column: 1 / -1;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 3px;
+}
+
+.image-container {
+    grid-column: 2;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 90%;
+    height: auto;
+    display: block;
+}

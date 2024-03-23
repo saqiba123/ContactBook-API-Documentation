@@ -1,0 +1,79 @@
+{% extends 'contacts/base.html' %}
+{% load static %}
+{% block title %}
+Contact Book API
+{% endblock %}
+
+{% block content %}
+<div class="home-container single-column-layout">
+    <div class="content">
+        <h1>Welcome to our Contact Book API!</h1> <br>
+        <p>Our Contact Book API allows you to manage your contacts effortlessly. Sign In or Sign
+            Up now to get started!
+        </p> <br>
+        <div>
+            <button><a href="{% url 'signin' %}" class="login-btn">Sign In</a></button>
+            <button><a href="{% url 'register' %}" class="register-btn">Sign Up</a></button>
+        </div>
+        <br>
+        <!-- Features Overview -->
+        <div class="features-section">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Effortlessly manage your contacts</li>
+                <li>Secure storage and access from anywhere</li>
+                <li>Customizable contact fields and categories</li>
+                <li>Easy integration with other applications</li>
+            </ul>
+        </div>
+        <br>
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq">
+                <p><b>How secure is my data?</b></p> <br>
+                <p>Your data is encrypted and securely stored in our servers.</p>
+            </div>
+            <!-- Add more FAQs here -->
+        </section>
+        <br>
+        <!-- How It Works Section -->
+        <section class="how-it-works-section">
+            <h2>How It Works</h2>
+            <p>To get started with our Contact Book API, follow these simple steps:</p> <br>
+            <ol>
+                <li><strong>Sign up for an account:</strong> If you haven't already, create an account <a
+                        href="{% url 'register' %}" class="here"><b>here</b></a>.</li>
+                <li><strong>Add your contacts:</strong> Once logged in, navigate to the contacts section and start
+                    adding your contacts.</li>
+                <li><strong>Access and manage your contacts anytime, anywhere:</strong> With our API, you can access and
+                    manage your contacts from any device with internet access.</li>
+            </ol>
+        </section>
+        <br>
+        <!-- Social Media Links -->
+        <div class="social-media-section">
+            <h2>Connect With Us</h2>
+            <div class="social-links">
+                <button><a href="https://www.twitter.com/" target="_blank" class="login-btn">Twitter (X) </a></button>
+                <button><a href="https://www.facebook.com/" target="_blank" class="login-btn">FaceBook </a></button>
+                <button><a href="https://www.instagram.com/" target="_blank" class="login-btn">Instagram</a></button>
+            </div>
+        </div>
+        <br>
+        <!-- Contact Information -->
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, feel free to reach out to us.</p>
+            <p>Email: contact@contactbook.com</p>
+        </section>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block javascript %}
+<script>
+    var show_logout_button = "{{ show_logout_button }}" === "True";
+</script>
+{% endblock %}
